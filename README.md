@@ -2,7 +2,7 @@
  I made this personal list of SQL commands, useful links, and notes to document my SQL learning journey. This list is not exhaustive and  will be updated whenever I learn a new command.
 
 ## Files
-* [**MySQL Cheat Sheet for Data Analysis**]() - The actual cheat sheet file for quick reference.
+* [**MySQL Cheat Sheet for Data Analysis**](MySQL-Cheat-sheet.md) - The actual cheat sheet file for quick reference.
 
 ## Useful Links
 | Link | Description |
