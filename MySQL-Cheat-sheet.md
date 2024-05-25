@@ -2,10 +2,13 @@
 
 ## Table of Contents
 
+[**Creating, Updating, and Deleting Data**](#creating-updating-and-deleting-data)
+
+
 [**Retrieving Data**](#retrieving-data)
 * [Selecting Data](#selecting-data) (`SELECT`, `FROM`)
 * [Sorting and Filtering Data](#sorting-and-filtering-data) (`ORDER BY`, `WHERE`, `BETWEEN`, `LIKE`, `LIMIT`, `OFFSET`)
-* [Aggregating Data](#aggregating-data) (`DISTINCT`, `COUNT`, `SUM`, `MIN`, `MAX`, `AVG`)
+* [Aggregating Data](#aggregating-data)
 * [Aliasing](#aliasing) (`AS`)
 * [Grouping Data](#grouping-data) (`GROUP BY`, `HAVING`)
 
@@ -28,6 +31,29 @@
 * [Temporary Tables](#temporary-tables)
 * [Stored Procedures](#stored-procedures)
 * [Triggers](#triggers)
+
+## Creating, Updating, and Deleting Data
+
+### Creating Tables
+
+[back to table of contents](#table-of-contents)
+
+### Modifying Tables
+
+[back to table of contents](#table-of-contents)
+
+### Adding Data Into a Table
+
+[back to table of contents](#table-of-contents)
+
+### Updating Tables
+
+[back to table of contents](#table-of-contents)
+
+### Deleting Data From a Table
+
+[back to table of contents](#table-of-contents)
+
 
 ## Retrieving Data
 
@@ -128,9 +154,9 @@
 #### Current Date and Time
 | Command            | Description                                          | Example Query               |
 | ------------------ | ---------------------------------------------------- | --------------------------- |
-| `CURRENTDATE`      | Displays current date (YYYY-MM-DD)                   | `SELECT CURRENTDATE()`      |
-| `CURRENTTIME`      | Displays current time (HH:MM:SS)                     | `SELECT CURRENTTIME()`      |
-| `CURRENTTIMESTAMP` | Displays current date and time (YYYY-MM-DD HH:MM:SS) | `SELECT CURRENTTIMESTAMP()` |
+| `CURRENT_DATE`      | Displays current date (YYYY-MM-DD)                   | `SELECT CURRENT_DATE()`      |
+| `CURRENT_TIME`      | Displays current time (HH:MM:SS)                     | `SELECT CURRENT_TIME()`      |
+| `CURRENT_TIMESTAMP` | Displays current date and time (YYYY-MM-DD HH:MM:SS) | `SELECT CURRENT_TIMESTAMP()` |
 
 #### Date
 | Command      | Description | Example Query | Return Value |
@@ -206,6 +232,11 @@ Use the above strings to format date and time with the following commands:
 | ------------- | ------------------------------------ | ----------------------------------------------- | --------------------- |
 | `DATE_FORMAT` | Format a date and returns as string  | `SELECT DATE_FORMAT('2023-12-23', '%M %d, %Y')` | `'December 23, 2023'` |
 | `TIME_FORMAT` | Format a time and returns as string  | `SELECT TIME_FORMAT('12:45:00', '%I %i %p')`    | `'12:45 PM'`          |
+
+##### Format String to Date
+| Command       | Description                 | Example Query                                  | Return Value |
+| ------------- | --------------------------- | ---------------------------------------------- | ------------ |
+| `STR_TO_DATE` | Converts a string to a date | `SELECT STR_TO_DATE('12/25/2024', '%m/%d/%Y')` | `2024-12-25` |
 
 [back to table of contents](#table-of-contents)
 
